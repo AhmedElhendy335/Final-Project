@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Database App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Database App</h1>
+  </header>
+  
+  <main>
+    <!-- Add Student -->
+    <section id="add-student">
+      <h2>Add Student</h2>
+      <form id="add-student-form">
+        <input type="number" id="student-id" placeholder="Student ID" required>
+        <input type="text" id="student-name" placeholder="Name" required>
+        <input type="text" id="student-nickname" placeholder="Nickname">
+        <input type="number" id="student-age" placeholder="Age" required>
+        <input type="text" id="student-grade" placeholder="Grade" required>
+        <input type="date" id="registration-date" placeholder="Registration Date" required>
+        <input type="text" id="student-lessons" placeholder="Lessons (comma-separated)" required>
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+    <!-- Delete Student -->
+    <section id="delete-student">
+      <h2>Delete Student</h2>
+      <form id="delete-student-form">
+        <input type="number" id="delete-student-id" placeholder="Student ID" required>
+        <button type="submit">Delete Student</button>
+      </form>
+    </section>
+
+    <!-- Update Student -->
+    <section id="update-student">
+      <h2>Update Student</h2>
+      <form id="update-student-form">
+        <input type="number" id="update-student-id" placeholder="Student ID" required>
+        <input type="text" id="update-student-name" placeholder="New Name">
+        <input type="text" id="update-student-nickname" placeholder="New Nickname">
+        <input type="number" id="update-student-age" placeholder="New Age">
+        <input type="text" id="update-student-grade" placeholder="New Grade">
+        <input type="date" id="update-registration-date" placeholder="New Registration Date">
+        <button type="submit">Update Student</button>
+      </form>
+    </section>
+
+    <!-- Show Student Info -->
+    <section id="show-student">
+      <h2>Show Student Info</h2>
+      <form id="show-student-form">
+        <input type="number" id="show-student-id" placeholder="Student ID" required>
+        <button type="submit">Show Info</button>
+      </form>
+      <div id="student-info"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
