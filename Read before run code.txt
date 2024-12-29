@@ -1,0 +1,3 @@
+*paste this code in terminal before run the code
+
+pip install pymongo
